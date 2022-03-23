@@ -2,14 +2,13 @@ import 'dart:async';
 
 import 'package:flutter/widgets.dart';
 import 'package:http/http.dart' as http;
-import 'package:peliculas/config/keys.dart';
 import 'package:peliculas/helpers/debouncer.dart';
 import 'package:peliculas/models/models.dart';
 import 'package:peliculas/models/movies_by_actor.dart';
 import 'package:peliculas/models/movies_by_genre_response.dart';
 
 class MoviesProvider extends ChangeNotifier {
-  String _apiKey = ApiKey;
+  String _apiKey = "Your API KEY here";
   String _baseUrl = 'api.themoviedb.org';
   String _language = 'es-ES';
 
